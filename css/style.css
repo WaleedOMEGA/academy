@@ -1,0 +1,528 @@
+/*start fonts*/
+@font-face {
+    font-family: Droid Arabic Kufi;
+    src: local(DroidKufi), url('../fonts/DroidKufi-Bold.ttf') format('opentype');
+    font-weight:bold;
+}
+@font-face {
+    font-family: Droid Arabic Kufi;
+    src: local(DroidKufi), url('../fonts/DroidKufi-Regular.ttf') format('opentype');
+    font-weight:normal;
+}
+/*end fonts*/
+/*start general rules*/
+*{
+    direction: rtl;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Droid Arabic Kufi', sans-serif;
+}
+.container{
+    width:80%;
+    margin: 0 auto;
+}
+li{
+    list-style: none;
+}
+.clr{
+    clear: both;
+}
+a{
+    text-decoration: none;
+    text-align: center;
+}
+/*end general rules*/
+/*start header*/
+header{
+    background-color: #fff;
+    text-align: center;
+}
+.logo{
+    float: right;
+    width:25%;
+    font-size: 2em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #666;
+    padding-left: 5%;
+    font-weight: bold;
+}
+nav{
+    width:70%;
+    float: right;
+    font-size: 1.2em;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+nav li{
+    float: left;
+    padding-right: 14px;
+}
+nav li a{
+    color: #B3B3B3;
+    cursor: pointer;
+}
+nav li a:hover{
+    color: #DAE798;
+    text-decoration: underline;
+}
+/*end header*/
+/*start main*/
+.main{
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    background: url(../images/Academy21.jpg);
+    background-size: cover;
+}
+.main h1{
+    padding-top: 5px;
+    color: #3FA2CB;
+    padding-bottom: 150px;
+    font-size: 3em;
+}
+.main p{
+    padding-top: 25px;
+    color: #E7B017;
+    font-size:2em;
+    font-weight: bolder;
+}
+.main button{
+    margin-top: 50px;
+    width: 250px;
+    background-color: #B6D434;
+    border-style: none;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.main button:hover{
+    background-color: #4ABFEA;
+}
+.main i{
+    display: block;
+    margin-top: 40px;
+    color: #4ABFEA;
+    font-size: 2.5em;
+}
+.main i:hover{
+    color: #B6D434;
+}
+/*end main*/
+/*start about*/
+.about{
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+.about h2{
+    color: #000;
+    margin-top: 0px;
+    font-weight: bolder;
+    font-size: 2.5em;
+    margin-bottom: 25px;
+}
+.about p{
+    padding-bottom: 25px;
+    color: #E7B017;
+    font-size:2em;
+    font-weight: bolder;
+}
+/*end about*/
+/*start train*/
+.train{
+    width: 100%;
+    min-height: 600px;
+    background-color: #67BFE5;
+    text-align: center;
+    overflow: hidden;
+}
+.train h2{
+    color: #fff;
+    margin-top: 0px;
+    font-weight: bolder;
+    font-size: 2.5em;
+    margin-bottom: 25px;
+}
+.train div{
+    float: right;
+    width:20%;
+    height: 450px;
+    border-radius: 25px;
+}
+.person ,.market ,.graph{
+    background-color: #fff;
+}
+.lang,.prog{
+    background-color: #1DA6D2;
+}
+.train div span{
+    border: 2px solid #000;
+    border-radius:25px;
+    text-align:center;
+    padding: 10px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.person span ,.market span ,.graph span{
+    color:#fff;
+    background:#000;
+}
+.lang span ,.prog span{
+    color:#000;
+    background:#fff;
+}
+.train div p{
+    padding-top: 20px;
+    font-size: 1.2em;
+    line-height: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+.train div button{
+    margin-top:  20px;
+    font-size: 1.3em;
+    font-weight: bold;
+    width: 50%;
+    border-radius: 10px
+}
+.person p ,.market p ,.graph p{
+    color: #1DA6D2;
+}
+.lang p ,.prog p{
+    color:#fff;
+}
+.person button ,.market button ,.graph button{
+    background-color: #1DA6D2;
+    color: #fff;
+}
+.lang button ,.prog button{
+    background-color:#fff;
+    color: #1DA6D2;
+}
+.person button:hover ,.market button:hover ,.graph button:hover{
+    background-color:#fff;
+    color: #1DA6D2;
+}
+.lang button:hover ,.prog button:hover{
+    background-color: #1DA6D2;
+    color: #fff;
+}
+/*end train*/
+/*start call*/
+.call{
+    width: 100%;
+    background-color: #f4f8fb;
+    text-align: center;
+    overflow: hidden;
+}
+.call h2{
+    color: #000;
+    margin-top: -100px;
+    font-weight: bolder;
+    font-size: 2.5em;
+}
+.mail input{
+    display: block;
+    width: 70%;
+	margin: 0 auto;
+	padding: 10px 0;
+	border: 1px solid #333;
+    text-align: center;
+}
+.mail input[type=text]{
+    border: 2px solid #000;
+	background: #67BFE5;
+	color: #000;
+	font-size: 1.4em;
+	border-radius: 25px;
+    margin-bottom: 10px;
+}
+.mail input[type=button]{
+    border: 2px solid #000;
+	width: 80%;
+	background: #222;
+	color: #fff;
+	border-radius: 25px;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+.mail input[type=button]:hover{
+    background: #67BFE5;
+	border: 2px solid #fff;
+	color: #000;
+    
+}
+/*end call*/
+/*start team*/
+.team{
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.team h2{
+    color: #000;
+    margin-top: 0px;
+    font-weight: bolder;
+    font-size: 2.5em;
+}
+.member{
+    float: right;
+    width:20%;
+    margin-left: 5%;
+    text-align: center;
+}
+.member img{
+    margin-top: 10px;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+.member img:hover{
+    border:2px solid #67BFE5;
+}
+.member h6{
+    color: #67BFE5;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.member h7{
+    color:#E7B017;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+/*end team*/
+/*start cust*/
+.cust{
+    width: 100%;
+    background-color: #477BAD;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.cust h2{
+    color: #000;
+    margin-top: -75px;
+    font-weight: bolder;
+    font-size: 2.5em;
+}
+.slider input{
+    display: none;
+}
+#slider{
+    width:100%;
+    height:300px;
+    position: relative;
+}
+#slider div{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    z-index: 0;
+    transition: 1s;
+    left: -300%
+}
+#slider div img{
+    position: absolute;
+    top: 25px;
+    left: 40%;
+    border: 2px solid #fff;
+    border-radius: 25px;
+}
+#slider div p{
+    position: absolute;
+    font-size: 2em;
+    top: 225px;
+    text-align: center;
+    left: 41%;
+    font-weight: 100;
+}
+#slider-btns{
+    text-align: center
+}
+#slider-btns label{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-right: 5px;
+    display: inline-block;
+    cursor: pointer
+}
+#slide-1-radio:checked~#slider #slide-1{
+   opacity: 1;
+    z-index: 1;
+    left: 0
+}
+#slide-1-radio:checked~#slider-btns #slide-1-btn{
+    background-color: #000000;
+}
+#slide-2-radio:checked~#slider #slide-2{
+    opacity: 1;
+    z-index: 1;
+    left: 0
+}
+#slide-2-radio:checked~#slider-btns #slide-2-btn{
+    background-color: #000000;
+}
+#slide-3-radio:checked~#slider #slide-3{
+    opacity: 1;
+    z-index: 1;
+    left: 0
+}
+#slide-3-radio:checked~#slider-btns #slide-3-btn{
+    background-color: #000000;
+}
+/*end cust*/
+/*start footer*/
+footer{
+    width: 100%;
+    background-color: #ffffff;
+    text-align: center;
+    overflow: hidden;
+}
+.social{
+    font-size: 2em;
+    margin-top: 10px;
+}
+.social i{
+    color: #477BAD;
+    border: 1px solid #477BAD;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+}
+.social i:hover{
+    color: #E7B017;
+    border: 1px solid #E7B017;
+}
+.copy{
+    text-align: center;
+    color:#E7B017;
+    font-size: 1em;
+    font-weight: bold;
+}
+.copy p em{
+    color: #477BAD;
+}
+/*end footer*/
+/*skew effect*/
+/*white*/
+.skew-bottom-ccw{
+    position: relative;
+    display: block;
+    padding-bottom: 100px;
+}
+.skew-bottom-ccw:after{
+    content: '';
+    position: absolute;
+    background: url(../images/skew-full-bottom-ccw.png) bottom;
+    background-size: 100% 100%;
+    height: 120px;
+    bottom: 0;
+	width: 100%;
+	display: block;
+}
+.skew-top-ccw{
+    position: relative;
+	display: block;
+    padding-top: 100px;
+}
+.skew-top-ccw:before {
+	content: '';
+	position: absolute;
+	background: url(../images/skew-full-top-ccw.png) bottom;
+	background-size: 100% 100%;
+	height: 120px;
+	top: 0;
+	width: 100%;
+	display: block;
+}
+.skew-bottom-cw{
+    position: relative;
+    display: block;
+    padding-bottom: 100px;
+}
+.skew-bottom-cw:after {
+	content: '';
+	position: absolute;
+	background: url(../images/skew-full-bottom-cw.png) bottom;
+	background-size: 100% 100%;
+	height: 120px;
+	bottom: 0;
+	width: 100%;
+	display: block;
+}
+.skew-top-cw{
+    position: relative;
+	display: block;
+    padding-top: 160px;
+}
+.skew-top-cw:before {
+	content: '';
+	position: absolute;
+	background: url(../images/skew-full-top-cw.png) bottom;
+	background-size: 100% 100%;
+	height: 120px;
+	top: 0;
+	width: 100%;
+	display: block;
+}
+/*end white*/
+/*pale white*/
+.skew-top-cww{
+    position: relative;
+	display: block;
+    padding-top: 160px;
+}
+.skew-top-cww:before {
+	content: '';
+	position: absolute;
+	background: url(../images/skew-full-top-cww.png) bottom;
+	background-size: 100% 100%;
+	height: 120px;
+	top: 0;
+	width: 100%;
+	display: block;
+}
+.skew-bottom-ccww{
+    position: relative;
+    display: block;
+    padding-bottom: 100px;
+}
+.skew-bottom-ccww:after{
+    content: '';
+    position: absolute;
+    background: url(../images/skew-full-bottom-ccww.png) bottom;
+    background-size: 100% 100%;
+    height: 120px;
+    bottom: 0;
+	width: 100%;
+	display: block;
+}
+.skew-bottom-cww{
+    position: relative;
+    display: block;
+    padding-bottom: 100px;
+}
+.skew-bottom-cww:after {
+	content: '';
+	position: absolute;
+	background: url(../images/skew-full-bottom-cww.png) bottom;
+	background-size: 100% 100%;
+	height: 120px;
+	bottom: 0;
+	width: 100%;
+	display: block;
+}
+/*end pale white*/
+/*end skew effect*/
